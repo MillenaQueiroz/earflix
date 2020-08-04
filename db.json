@@ -30,5 +30,193 @@
         "nome": "Humor",
         "descricao": "Podcasts de humor"   
         }
+    ],
+    "videos": [
+        {
+          "id": 1,
+          "categoriaId": 1,
+          "titulo": "Ilustração, Andaimes e Rock’n Roll — Renato Reno (Bicicleta Sem Freio)",
+          "url": "https://www.youtube.com/watch?v=WH9vlXNuQLE&list=PL2OXZ22H-OPdyehZwYReTCqviKkL5LRzD&index=10"
+        },
+        {
+          "id": 2,
+          "categoriaId": 1,
+          "titulo": "Tecnologia e o ser humano",
+          "url": "https://www.youtube.com/watch?v=CD4sgssg35o"
+        },
+        {
+          "id": 3,
+          "categoriaId": 1,
+          "titulo": "10 Podcasts for Web Developers",
+          "url": "https://www.youtube.com/watch?v=3Zn8k4_cnpg"
+        },
+        {
+          "id": 4,
+          "categoriaId": 1,
+          "titulo": "O futuro do front-end e do React | Podcast FalaDev #08",
+          "url": "https://www.youtube.com/watch?v=GnA0k8gT6xw"
+        },
+        {
+          "id": 5,
+          "categoriaId": 1,
+          "titulo": "WATCH THIS Before You Learn React! | Better Coding Podcast #4",
+          "url": "https://www.youtube.com/watch?v=BqDaSupqCQA"
+        },
+        {
+          "id": 6,
+          "categoriaId": 1,
+          "titulo": "PHP, LARAVEL, JAVASCRIPT E O MERCADO WEB | PODCAST PAPO WEB #023",
+          "url": "https://www.youtube.com/watch?v=qVPX0D1uZbc"
+        },
+        {
+          "id": 7,
+          "categoriaId": 1,
+          "titulo": "Boas práticas no front-end, técnicas e estratégias | Podcast FalaDev #12",
+          "url": "https://www.youtube.com/watch?v=L0zuZYh800Q&t=318s"
+        },
+        {
+          "id": 8,
+          "categoriaId": 1,
+          "titulo": "Devemos mudar o nome do JavaScript?",
+          "url": "https://www.youtube.com/watch?v=MQxQ7FyD38E"
+        },
+        {
+          "id": 9,
+          "categoriaId": 2,
+          "titulo": "Ansiedade na quarentena | Podcast Entrementes",
+          "url": "https://www.youtube.com/watch?v=PIF8rsAQBOI"
+        },
+        {
+          "id": 10,
+          "categoriaId": 2,
+          "titulo": "Saúde Mental | Podcast GLOCAL E21T06",
+          "url": "https://www.youtube.com/watch?v=FTNk8VtI_nQ"
+        },
+        {
+          "id": 11,
+          "categoriaId": 2,
+          "titulo": "Sexualidade Feminina | Podcast Glocal EP038T06",
+          "url": "https://www.youtube.com/watch?v=HMtUfc30tSE"
+        },
+        {
+          "id": 12,
+          "categoriaId": 2,
+          "titulo": "Maconha medicinal no Brasil - podcast Detetives da SAÚDE",
+          "url": "https://www.youtube.com/watch?v=jvMdsieVX8g"
+        },
+        {
+          "id": 13,
+          "categoriaId": 2,
+          "titulo": "Retrocessos da nova Saúde Mental | Fisio e TO PodCast #003",
+          "url": "https://www.youtube.com/watch?v=B0s0eyxyAFM"
+        },
+        {
+          "id": 14,
+          "categoriaId": 3,
+          "titulo": "PODCAST Meditação # 003 - Para quem acha que não consegue meditar - Quebrando Mitos",
+          "url": "https://www.youtube.com/watch?v=tbK7zr6chS0"
+        },
+        {
+          "id": 15,
+          "categoriaId": 3,
+          "titulo": "MEDITAÇÃO GUIADA - LIMPEZA EMOCIONAL (Voz suave, musica relaxante)",
+          "url": "https://www.youtube.com/watch?v=zGwuWzCyqgs"
+        },
+        {
+          "id": 16,
+          "categoriaId": 3,
+          "titulo": "O QUE É MEDITAÇÃO E COMO COMEÇAR A MEDITAR | PODCAST SAI DA MÉDIA #032",
+          "url": "https://www.youtube.com/watch?v=SGBdA-4xaTE"
+        },
+        {
+          "id": 17,
+          "categoriaId": 3,
+          "titulo": "Para Dormir e Acordar BEM - Meditação Guiada (som de chuva no final)",
+          "url": "https://www.youtube.com/watch?v=HMIO68zdv4o"
+        },
+        {
+          "id": 18,
+          "categoriaId": 4,
+          "titulo": "AUDIOLIVRO: O PODER DO HÁBITO - Charles Duhigg | Audiobook Completo",
+          "url": "https://www.youtube.com/watch?v=gueCuAfrskc"
+        },
+        {
+          "id": 19,
+          "categoriaId": 4,
+          "titulo": "Pai rico pai pobre",
+          "url": "https://www.youtube.com/watch?v=n402mogx9UA&t=4s"
+        },
+        {
+          "id": 20,
+          "categoriaId": 4,
+          "titulo": "Peter Pan",
+          "url": "https://www.youtube.com/watch?v=ev1nR0ChRnc"
+        },
+        {
+          "id": 21,
+          "categoriaId": 4,
+          "titulo": "O poder do subconsciente",
+          "url": "https://www.youtube.com/watch?v=TN-5aADvp2g"
+        },
+        {
+          "id": 22,
+          "categoriaId": 5,
+          "titulo": "A Ladra",
+          "url": "https://www.youtube.com/watch?v=R5y9r5tXACM"
+        },
+        {
+          "id": 23,
+          "categoriaId": 5,
+          "titulo": "Crime e Castigo",
+          "url": "https://www.youtube.com/watch?v=Rw07lC4XvRI"
+        },
+        {
+          "id": 24,
+          "categoriaId": 5,
+          "titulo": "Aprendendo a Amar",
+          "url": "https://youtu.be/ifwbzmCn0Co?list=PLpTZuPz0-vLLMQfEgxatFuPB0v3_lSZQS"
+        },
+        {
+          "id": 25,
+          "categoriaId": 5,
+          "titulo": "Justiça além da vida",
+          "url": "https://youtu.be/kOJqPs7cRW4?list=PLpTZuPz0-vLLMQfEgxatFuPB0v3_lSZQS"
+        },
+        {
+          "id": 26,
+          "categoriaId": 5,
+          "titulo": "Herança De Ódio",
+          "url": "https://youtu.be/bQ0Vzu4DZ1M?list=PLkpaAvf4266qfbnIw1jgiwpKwqOfrs9N-"
+        },
+        {
+            "id": 27,
+            "categoriaId": 6,
+            "titulo": "Tava Vindo Pra Cá Podcast #1 Igor Guimarães",
+            "url": "https://www.youtube.com/watch?v=stoRT5najdQ"
+        },
+        {
+          "id": 28,
+          "categoriaId": 6,
+          "titulo": "Dihh Lopes",
+          "url": "https://www.youtube.com/watch?v=ivjw1JNRVfc"
+        },
+        {
+            "id": 29,
+          "categoriaId": 6,
+          "titulo": "Mamilos Podcast",
+          "url": "https://www.youtube.com/watch?v=kfNWoRaqG40"
+        },
+        {
+          "id": 30,
+          "categoriaId": 6,
+          "titulo": "Regret Podcast",
+          "url": "https://www.youtube.com/watch?v=gPVHEqWgcTc"
+        },
+        {
+            "id": 31,
+          "categoriaId": 6,
+          "titulo": "Comedia",
+          "url": "https://www.youtube.com/watch?v=dfkyaDd7VqI"
+        }
     ]
 }
