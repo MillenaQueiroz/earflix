@@ -2,32 +2,32 @@
     "categorias": [
         {
         "id": 1,
-        "nome": "Tecnologia",
+        "titulo": "Tecnologia",
         "descricao": "Podcasts sobre tecnologia"
         },
         {
         "id": 2,
-        "nome": "Saúde",
+        "titulo": "Saúde",
         "descricao": "Podcasts sobre saúde e bem estar"   
         },
         {
         "id": 3,
-        "nome": "Meditação",
+        "titulo": "Meditação",
         "descricao": "Áudios para meditar"   
         },
         {
         "id": 4,
-        "nome": "Audiobooks",
+        "titulo": "Audiobooks",
         "descricao": "Áudios de livros"   
         },
         {
         "id": 5,
-        "nome": "Audionovelas",
+        "titulo": "Audionovelas",
         "descricao": "Novelas em áudio"   
         },
         {
         "id": 6,
-        "nome": "Humor",
+        "titulo": "Humor",
         "descricao": "Podcasts de humor"   
         }
     ],
@@ -219,4 +219,5 @@
           "url": "https://www.youtube.com/watch?v=dfkyaDd7VqI"
         }
     ]
+
 }
