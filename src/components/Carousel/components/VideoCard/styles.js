@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const VideoCardContainer = styled.a`
-  border: 2px solid;
+  
   border-radius: 4px;
+
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
-  color: white;
+  color: yellow;
   flex: 0 0 298px;
   width: 298px;
   height: 197px;
@@ -22,7 +23,9 @@ export const VideoCardContainer = styled.a`
   transition: opacity .3s;
   &:hover,
   &:focus {
-    opacity: .5;
+    transition: all .4s ease-in-out;
+    z-index: 10;
+    transform: scale(1.2);
   }
   
   &:not(:first-child) {
