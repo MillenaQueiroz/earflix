@@ -14,7 +14,7 @@ function CadastroConteudo(){
     const history = useHistory();
     const [categorias, setCategorias] = useState([]);
 
-    const categoryTitles = categorias.map(({ nome }) => nome);
+    const categoryTitles = categorias.map(({ titulo }) => titulo);
 
     const { handleChange, values} = useForm({
         titulo: '',
@@ -29,7 +29,7 @@ function CadastroConteudo(){
                 setCategorias(categoriasFromServer);
             });
     },[]);
-    console.log(categorias);
+
     return(
         <PageDefault>
             <h1>Cadastro de Conteúdos</h1>
@@ -77,7 +77,7 @@ function CadastroConteudo(){
                 />
                 
                 <Button type="submit">
-                    CADASTRAR
+                    Cadastrar
                 </Button>
             </form>
 
