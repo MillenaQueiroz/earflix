@@ -4,7 +4,8 @@ import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 import useForm from '../../../hooks/useForm';
-
+import config from '../../../config';
+import { Table } from './styles';
 
 function CadastroCategoria() {
   const valoresIniciais = {
@@ -16,9 +17,6 @@ function CadastroCategoria() {
   const { handleChange, values, clearForm} = useForm(valoresIniciais);
   const [categorias, setCategorias] = useState([]);
  
-
-  
-
   useEffect(() => {
     if (window.location.href.includes('localhost')) {
       const URL = window.location.hostname.includes('localhost') 
@@ -39,8 +37,8 @@ function CadastroCategoria() {
   return (
     <PageDefault>
       <h1>
-        Cadastro de Categoria:
-        {values.nome}
+        Cadastro de Categoria:&nbsp; 
+        <h4 style={{color:'var(--primary)',display:'inline'}}>{values.titulo}</h4>
       </h1>
 
       <form onSubmit={function handleSubmit(infosDoEvento) {
@@ -58,8 +56,8 @@ function CadastroCategoria() {
         <FormField
           label="Nome da Categoria"
           type="text"
-          name="nome"
-          value={values.nome}
+          name="titulo"
+          value={values.titulo}
           onChange={handleChange}
         />
 
@@ -71,18 +69,37 @@ function CadastroCategoria() {
           onChange={handleChange}
         />
 
-        <Button>
+        <Button type="submit">
           Cadastrar
         </Button>
       </form>
 
-      <ul>
-        {categorias.map((categoria) => (
-          <li key={`${categoria.titulo}`}>
-            {categoria.titulo}
-          </li>
-        ))}
-      </ul>
+      <Table>
+            
+              <tr>
+                <th>Nome da Categoria</th>
+                <th>Descrição</th>
+              </tr>
+              
+          
+            {categorias.map((categoria) => {
+              return (
+                <tr key={categoria.id}>
+                  <td
+                    className="titulo"
+                  >
+                    {categoria.titulo}
+                  </td>
+                  <td>{categoria.descricao}</td>
+                </tr>
+              );
+            })}
+          
+        </Table>
+
+
+
+      
 
       <Link to="/">
         Ir para home
