@@ -101,9 +101,7 @@ function CadastroCategoria() {
 
       </Table>
 
-      <Link to="/">
-        Ir para home
-      </Link>
+          <br/>
     </PageDefault>
   );
 }
