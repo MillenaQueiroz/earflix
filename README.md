@@ -3,6 +3,7 @@
 <b>Earflix is ​​a project that aims to make a new version of Netflix with audio content only.</b>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+<img src="README/telainicial.jpg"/>
 ## Available Scripts
 
 In the project directory, you can run:
