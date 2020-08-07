@@ -41,6 +41,7 @@ export const VideoCardList = styled.ul`
   
   li {
     margin-right: 16px;
+    
   }
 `;
 
