@@ -4,7 +4,7 @@ import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 import useForm from '../../../hooks/useForm';
-import config from '../../../config';
+import categoriasRepository from '../../../repositories/categorias';
 import { Table } from './styles';
 
 function CadastroCategoria() {
@@ -14,18 +14,18 @@ function CadastroCategoria() {
 
   };
 
-  const { handleChange, values, clearForm} = useForm(valoresIniciais);
+  const { handleChange, values, clearForm } = useForm(valoresIniciais);
   const [categorias, setCategorias] = useState([]);
- 
+
   useEffect(() => {
     if (window.location.href.includes('localhost')) {
-      const URL = window.location.hostname.includes('localhost') 
-      ? 'http://localhost:8080/categorias'
-      : 'https://earflix.herokuapp.com/categorias';
+      const URL = window.location.hostname.includes('localhost')
+        ? 'http://localhost:8080/categorias'
+        : 'https://earflix.herokuapp.com/categorias';
       fetch(URL)
-        .then(async (respostaDoServer) => {
-          if (respostaDoServer.ok) {
-            const resposta = await respostaDoServer.json();
+        .then(async (respostaDoServidor) => {
+          if (respostaDoServidor.ok) {
+            const resposta = await respostaDoServidor.json();
             setCategorias(resposta);
             return;
           }
@@ -37,8 +37,8 @@ function CadastroCategoria() {
   return (
     <PageDefault>
       <h1>
-        Cadastro de Categoria:&nbsp; 
-        <h4 style={{color:'var(--primary)',display:'inline'}}>{values.titulo}</h4>
+        Cadastro de Categoria:&nbsp;
+        <h4 style={{ color: 'var(--primary)', display: 'inline' }}>{values.titulo}</h4>
       </h1>
 
       <form onSubmit={function handleSubmit(infosDoEvento) {
@@ -48,6 +48,13 @@ function CadastroCategoria() {
           ...categorias,
           values,
         ]);
+        categoriasRepository.create({
+          titulo: values.titulo,
+          descricao: values.descricao,
+        })
+          .then(() => {
+            console.log('Cadastrou com sucesso!');
+          });
 
         clearForm();
       }}
@@ -75,31 +82,24 @@ function CadastroCategoria() {
       </form>
 
       <Table>
-            
-              <tr>
-                <th>Nome da Categoria</th>
-                <th>Descrição</th>
-              </tr>
-              
-          
-            {categorias.map((categoria) => {
-              return (
-                <tr key={categoria.id}>
-                  <td
-                    className="titulo"
-                  >
-                    {categoria.titulo}
-                  </td>
-                  <td>{categoria.descricao}</td>
-                </tr>
-              );
-            })}
-          
-        </Table>
 
+        <tr>
+          <th>Nome da Categoria</th>
+          <th>Descrição</th>
+        </tr>
 
+        {categorias.map((categoria) => (
+          <tr key={categoria.id}>
+            <td
+              className="titulo"
+            >
+              {categoria.titulo}
+            </td>
+            <td>{categoria.descricao}</td>
+          </tr>
+        ))}
 
-      
+      </Table>
 
       <Link to="/">
         Ir para home

@@ -29,6 +29,11 @@
       "id": 6,
       "titulo": "Humor",
       "descricao": "Podcasts de humor"
+    },
+    {
+      "titulo": "Músicas",
+      "descricao": "musicas para ouvir",
+      "id": 7
     }
   ],
   "videos": [
@@ -235,6 +240,12 @@
       "url": "https://www.youtube.com/watch?v=OO_I6jLt-hg",
       "categoriaId": 4,
       "id": 34
+    },
+    {
+      "titulo": "Chlorine - Twenty One Pilots",
+      "url": "https://www.youtube.com/watch?v=eJnQBXmZ7Ek",
+      "categoriaId": 7,
+      "id": 35
     }
   ]
 }
